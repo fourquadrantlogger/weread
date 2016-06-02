@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="@dimen/x520"
+        android:layout_height="@dimen/y90"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y180">
+
+        <RelativeLayout
+            android:id="@+id/rl_denglu_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/denglu_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/login_qq"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x40"
+                android:paddingRight="@dimen/x40"
+                android:text="QQ登录"
+                android:textColor="@color/green_3d"
+                android:textSize="@dimen/y34" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_denglu_wb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/rl_denglu_qq"
+            android:background="@drawable/denglu_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/login_weibo"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center"
+                android:text="微博登录"
+                android:textColor="@color/green_3d"
+                android:textSize="@dimen/y34" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_denglu_wx"
+        android:layout_width="@dimen/x520"
+        android:layout_height="@dimen/y90"
+        android:layout_above="@+id/relativeLayout8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y30"
+        android:background="@drawable/denglu_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/login_weixin"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="微信登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y34" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y198"
+        android:src="@drawable/youshu_applogo" />
+
+    <TextView
+        android:id="@+id/tv_denglu_sj"
+        android:layout_width="@dimen/x520"
+        android:layout_height="@dimen/y90"
+        android:layout_above="@+id/rl_denglu_wx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y30"
+        android:background="@drawable/denglu_white"
+        android:gravity="center"
+        android:text="手机登录"
+        android:textColor="@color/green_3d"
+        android:textSize="@dimen/y34"
+        android:visibility="gone" />
+</RelativeLayout>

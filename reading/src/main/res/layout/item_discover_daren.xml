@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y180">
+
+        <TextView
+            android:id="@+id/tv_discover_daren_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_discover_daren_avatar"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/iv_discover_daren_avatar"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_64"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_discover_daren_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_discover_daren_name"
+            android:layout_alignStart="@+id/tv_discover_daren_name"
+            android:layout_below="@+id/tv_discover_daren_name"
+            android:layout_marginTop="@dimen/y10"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y26" />
+
+        <ImageView
+            android:id="@+id/iv_discover_daren_avatar"
+            android:layout_width="@dimen/y120"
+            android:layout_height="@dimen/y120"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:background="@color/e5" />
+    </RelativeLayout>
+
+
+</LinearLayout>

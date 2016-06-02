@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_group_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_13"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="@dimen/y4">
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:src="@drawable/title_jiantou_left_white"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_toLeftOf="@+id/view_line"
+                android:layout_weight="0.5"
+                android:background="@drawable/deep_nav_left"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="随笔"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y30"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="0.5px"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/white"></View>
+
+            <TextView
+                android:id="@+id/textView_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@+id/view_line"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="早晚读"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y30"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_group_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="你还没有收藏内容哦"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y30"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_group_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_group"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_my_shoucang_pack_fav"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

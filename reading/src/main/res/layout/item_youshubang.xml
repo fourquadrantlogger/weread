@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_achieve_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140">
+
+        <TextView
+            android:id="@+id/tv_item_achieve_rank"
+            android:layout_width="@dimen/y84"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_a8"
+            android:textSize="@dimen/y34"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_item_achieve_avatar"
+            android:layout_width="@dimen/y80"
+            android:layout_height="@dimen/y80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/tv_item_achieve_rank"
+            android:background="@drawable/avatar"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tv_item_achieve_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toRightOf="@+id/iv_item_achieve_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/tv_item_achieve_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@+id/tv_item_achieve_name"
+            android:text=""
+            android:textColor="@color/text_23"
+            android:textSize="@dimen/y34"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_achieve_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:text=""
+            android:textColor="@color/text_a8"
+            android:textSize="@dimen/y34"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/e5" />
+
+</LinearLayout>

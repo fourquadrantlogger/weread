@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_wodexunzhang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.fengwo.reading.view.Viewsimpletitle
+        android:id="@+id/Viewsimpletitle_wodexunzhang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.fengwo.reading.view.Viewsimpletitle>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_wodexunzhang_teshu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:text="特殊勋章" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:background="@color/line2" />
+
+                <GridView
+                    android:id="@+id/gridView_wodexunzhang_teshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:divider="@color/line"
+
+                    android:dividerHeight="@dimen/y1"
+                    android:numColumns="3"
+                    android:scrollbars="none"></GridView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_wodexunzhang_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y80"
+                    android:layout_marginTop="@dimen/y30"
+                    android:gravity="center_vertical"
+                    android:text="有书勋章" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:background="@color/line2" />
+
+                <GridView
+                    android:id="@+id/gridView_wodexunzhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:divider="@color/line"
+
+                    android:dividerHeight="@dimen/y1"
+                    android:numColumns="3"
+                    android:scrollbars="none"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y620"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--图片标题-->
+        <ImageView
+            android:id="@+id/iv_bookpart_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y410"
+            android:background="@color/realgrey"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y410"
+            android:scaleType="fitXY"
+            android:src="@drawable/bookpack_tuceng" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_goto_fragment_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/y20"
+                android:src="@drawable/music_anim" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/part_bookpack_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y330" />
+    </FrameLayout>
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_bookpart_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:background="@color/white"
+        android:ellipsize="none"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <WebView
+        android:id="@+id/wv_readbook_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:text="分享到:"
+            android:textColor="@color/text_99" />
+
+        <ImageView
+            android:id="@+id/iv_bookpart_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_toRightOf="@+id/textView7"
+            android:src="@drawable/share_wx" />
+
+        <ImageView
+            android:id="@+id/iv_bookpart_pyq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@+id/iv_bookpart_wx"
+            android:src="@drawable/share_pyq" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white" />
+
+    <include layout="@layout/part_bookpack_qiandao"></include>
+
+    <LinearLayout
+        android:tag="评论标题栏"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88" >
+
+            <TextView
+                android:id="@+id/tv_comment_header_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/background_white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:text="评论"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_comment_header_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:background="@drawable/background_white"
+                android:text="点赞"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y30" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/line" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_readbook_hotList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.fengwo.reading.view.MyListView
+            android:id="@+id/lv_readbook_hotList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:tag="更多热门评论"
+            android:id="@+id/rl_readbook_hotList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100">
+
+            <View
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_toLeftOf="@+id/textView6"
+                android:background="@color/e5" />
+
+            <View
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_toRightOf="@+id/textView6"
+                android:background="@color/e5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="查看更多热门评论"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y30" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/e5" />
+    </LinearLayout>
+</LinearLayout>

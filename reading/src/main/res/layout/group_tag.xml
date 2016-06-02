@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fengwo.reading.main.group.widget.TagView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y60"
+    android:drawablePadding="@dimen/x10"
+    android:minHeight="0.0dip"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:textColor="#ff000000"
+    android:textSize="@dimen/y32" />

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_explain_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/e5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x28"
+            android:paddingTop="@dimen/y57"
+            android:src="@drawable/dot_focused" />
+
+        <TextView
+            android:id="@+id/tv_explain_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:lineSpacingMultiplier="1.3"
+            android:paddingBottom="@dimen/y40"
+            android:paddingLeft="@dimen/y20"
+            android:paddingTop="@dimen/y40"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y34" />
+    </RelativeLayout>
+
+</LinearLayout>

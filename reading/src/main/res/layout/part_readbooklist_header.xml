@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@drawable/kuang_bg">
+
+        <ImageView
+            android:id="@+id/iv_readbooklist_bookinfo_fengmian"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/e5"
+            android:padding="@dimen/x1"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_readbooklist_bookinfo_bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_readbooklist_bookinfo_fengmian"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_toLeftOf="@+id/tv_readbooklist_bookinfo_qi"
+            android:layout_toRightOf="@+id/iv_readbooklist_bookinfo_fengmian"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y34" />
+
+        <TextView
+            android:id="@+id/tv_readbooklist_bookinfo_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_readbooklist_bookinfo_fengmian"
+            android:layout_marginRight="@dimen/x40"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_readbooklist_bookinfo_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_readbooklist_bookinfo_bookname"
+            android:layout_below="@+id/tv_readbooklist_bookinfo_bookname"
+            android:layout_marginTop="@dimen/y20"
+            android:text=""
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_readbooklist_bookinfo_wereadtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_readbooklist_bookinfo_fengmian"
+            android:layout_alignLeft="@+id/tv_readbooklist_bookinfo_author"
+            android:layout_alignStart="@+id/tv_readbooklist_bookinfo_author"
+            android:text=""
+            android:textColor="@color/text_64"
+            android:textSize="@dimen/y26" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_bookinfowithpacks_play"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/y88">
+
+            <ImageView
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:gravity="center"
+
+                android:layout_toLeftOf="@+id/textView_bookinfowithpacks_play"
+                android:background="@drawable/readlist_play"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/x20" />
+            <TextView
+                android:id="@+id/textView_bookinfowithpacks_play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="播放领读"
+                android:gravity="center"
+
+                android:textSize="@dimen/y24"
+                android:textColor="@color/text_99"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_width="@dimen/y1"
+            android:layout_height="match_parent"
+            android:background="@color/line2"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/y88">
+
+            <TextView
+                android:id="@+id/textView_savetolocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="离线下载"
+                android:gravity="center"
+                android:textSize="@dimen/y24"
+                android:textColor="@color/text_99"
+                android:layout_centerInParent="true" />
+
+            <FrameLayout
+
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:layout_toLeftOf="@+id/textView_savetolocal"
+
+                android:layout_marginRight="@dimen/x20">
+
+                <ImageView
+                    android:id="@+id/ImageView_bookinfowithpacks_savetolocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.fengwo.reading.view.RoundProgressBar
+                    android:id="@+id/progress_bookinfowithpacks"
+                    android_custom:roundColor="#00000000"
+                    android_custom:roundProgressColor="@color/green"
+
+                    android_custom:textIsDisplayable="false"
+
+                    android_custom:roundWidth="@dimen/x5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="@color/bg" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <EditText
+        android:id="@+id/et_publishmessage_liuyan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y600"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="写评论:"
+        android:maxLength="40"
+        android:padding="10dp"
+        android:textColor="@color/text_32"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/y30" />
+
+    <TextView
+        android:id="@+id/tv_publishmessage_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_publishmessage_liuyan"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginRight="@dimen/x28"
+        android:text="asas"
+        android:textColor="@color/text_a8"
+        android:textSize="@dimen/y26" />
+
+</RelativeLayout>

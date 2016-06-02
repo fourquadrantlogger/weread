@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_marginBottom="@dimen/y30"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/x500"
+        android:layout_height="@dimen/y640"
+        android:layout_centerVertical="true"
+        android:background="@drawable/layout_popupwindow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30">
+
+        <ImageView
+            android:id="@+id/imageView_popupwindow_usexunzhang"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/y255"
+            android:layout_marginTop="@dimen/y40" />
+
+        <TextView
+            android:id="@+id/textView_popubwindow_usexunzhang_badge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="天使勋章"
+            android:textColor="@color/text_64" />
+
+        <TextView
+            android:id="@+id/textView_popubwindow_usexunzhang_get_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center_horizontal"
+            android:text="累计发表3条随笔，即可获得该勋章"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y24" />
+
+        <View
+            android:layout_width="@dimen/x360"
+            android:layout_height="@dimen/y1"
+            android:layout_marginTop="@dimen/y40"
+            android:background="@color/line2" />
+
+        <Button
+            android:id="@+id/button_popupwindow_usexunzhang_use"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y64"
+            android:layout_marginTop="@dimen/y70"
+            android:background="@drawable/btn_green"
+            android:text="使用勋章"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y28" />
+
+        <TextView
+            android:id="@+id/textView_popubwindow_usexunzhang_get_rule_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y70"
+            android:gravity="center_horizontal"
+            android:text="累计发表3条随笔，即可获得该勋章"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y24"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

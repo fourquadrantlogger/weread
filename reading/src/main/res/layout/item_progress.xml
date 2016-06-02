@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_progress_item_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_progress_item_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x38"
+            android:drawableLeft="@drawable/yuan_progress_item_green"
+            android:drawablePadding="@dimen/x38"
+            android:gravity="center"
+            android:text="5 月"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_progress_item_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view5"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toEndOf="@+id/tv_progress_item_month"
+            android:layout_toRightOf="@+id/tv_progress_item_month"
+            android:gravity="center"
+            android:text="2016"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y24" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="@dimen/y1"
+            android:layout_height="@dimen/y340"
+            android:layout_below="@+id/tv_progress_item_month"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@color/e5" />
+
+        <GridView
+            android:id="@+id/gv_progress_item_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view5"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@+id/view5"
+            android:background="@color/white"
+            android:horizontalSpacing="@dimen/x20"
+            android:numColumns="4"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

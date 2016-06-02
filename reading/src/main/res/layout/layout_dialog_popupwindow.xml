@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv_dialog_close"
+            android:layout_width="@dimen/y90"
+            android:layout_height="@dimen/y90"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y130"
+            android:scaleType="fitXY"
+            android:src="@drawable/qtk_shanchu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/iv_dialog_close"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y56"
+            android:layout_marginLeft="@dimen/x62"
+            android:layout_marginRight="@dimen/x62"
+            android:layout_marginTop="@dimen/y90"
+            android:background="@drawable/btn_white" >
+
+            <ImageView
+                android:id="@+id/iv_dialog_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_dialog_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/y60"
+                android:text="正在加载..."
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

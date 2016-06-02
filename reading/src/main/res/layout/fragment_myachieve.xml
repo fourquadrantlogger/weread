@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_achieve_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_discover_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <com.fengwo.reading.view.MyScrollView
+            android:id="@+id/sv_discover_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_achieve_tuceng1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y620">
+
+                    <ImageView
+                        android:id="@+id/iv_achieve_avatar_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#5013bf68" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#20000000" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_achieve_avatar"
+                        android:layout_width="@dimen/y160"
+                        android:layout_height="@dimen/y160"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y160">
+
+                        <ImageView
+                            android:id="@+id/iv_achieve_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_white"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/avatar" />
+
+                        <ImageView
+                            android:id="@+id/iv_achieve_vip"
+                            android:layout_width="@dimen/y44"
+                            android:layout_height="@dimen/y44"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_achieve_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_achieve_avatar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/x20"
+                            android:drawableRight="@drawable/myachieve_right_white"
+                            android:gravity="center"
+                            android:text="查看排行榜"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/y28"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y120"
+                        android:layout_alignParentBottom="true"
+                        android:background="#10000000"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_achieve_exe"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/x1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/ll_achieve_exe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y15"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_achieve_exe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/y38"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/x2"
+                                    android:text="点"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/y24" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ll_achieve_exe"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y7"
+                                android:text="今日经验值"
+                                android:textColor="#80ffffff"
+                                android:textSize="@dimen/y24" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/x1"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/y20"
+                            android:layout_marginTop="@dimen/y20"
+                            android:background="#40ffffff" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_achieve_chaoyue"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/x1"
+                            android:layout_marginRight="@dimen/x1"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/ll_achieve_chaoyue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y15"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_achieve_chaoyue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/y38"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/x2"
+                                    android:text="%"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/y24" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ll_achieve_chaoyue"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y7"
+                                android:text="今日成长超越了全国"
+                                android:textColor="#80ffffff"
+                                android:textSize="@dimen/y24" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y190"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/iv_achieve_dengji_qian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/y32"
+                        android:background="@drawable/grade_1" />
+
+                    <TextView
+                        android:id="@+id/tv_achieve_jingyan_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/pb_achieve_show"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/y5"
+                        android:text=""
+                        android:textColor="@color/yellow_b21e"
+                        android:textSize="@dimen/y22" />
+
+                    <ImageView
+                        android:id="@+id/iv_achieve_dengji_hou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/x28"
+                        android:layout_marginTop="@dimen/y30"
+                        android:background="@drawable/grade_2hou" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_achieve_show"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y16"
+                        android:layout_below="@+id/iv_achieve_dengji_qian"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:layout_marginTop="@dimen/y12"
+                        android:progressDrawable="@drawable/myachieve_bar" />
+
+                    <TextView
+                        android:id="@+id/tv_achieve_jingyan_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pb_achieve_show"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y22"
+                        android:text=""
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y22" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_achieve_medal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:drawableLeft="@drawable/myachieve_medal"
+                        android:drawablePadding="@dimen/x12"
+                        android:gravity="center"
+                        android:text="我的勋章"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y22" />
+
+                    <TextView
+                        android:id="@+id/tv_achieve_medal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x28"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/title_jiantou_right_gray"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_32"
+                        android:textSize="@dimen/y34" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_achieve_jiangli_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y290"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/y18"
+                        android:drawableLeft="@drawable/myachieve_reward"
+                        android:drawablePadding="@dimen/x12"
+                        android:gravity="center"
+                        android:text="成长奖励"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y22" />
+
+                    <View
+                        android:id="@+id/View1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="@dimen/y18"
+                        android:background="@color/e5" />
+
+                    <GridView
+                        android:id="@+id/gv_achieve_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y150"
+                        android:layout_below="@+id/View1"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_marginTop="@dimen/y30"
+                        android:background="@color/white"
+                        android:horizontalSpacing="@dimen/x40"
+                        android:numColumns="4"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingRight="@dimen/x28"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/y18"
+                        android:drawableLeft="@drawable/myachieve_task"
+                        android:drawablePadding="@dimen/x12"
+                        android:gravity="center"
+                        android:text="成长任务"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y22" />
+
+                    <View
+                        android:id="@+id/View2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="@dimen/y18"
+                        android:background="@color/e5" />
+
+                    <com.fengwo.reading.view.MyListView
+                        android:id="@+id/lv_achieve_renwu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/View2"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_achieve_sponsor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:layout_marginTop="@dimen/y40"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="为书友提供成长奖品,请联系我们"
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y100"
+                    android:background="@color/bg" />
+
+            </LinearLayout>
+        </com.fengwo.reading.view.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+</RelativeLayout>

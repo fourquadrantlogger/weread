@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_popupwindow_btn4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="btn4"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y38"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_popupwindow_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="btn3"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y38"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_popupwindow_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="btn2"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y38"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_popupwindow_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="btn1"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y38"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_popupwindow_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y38"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

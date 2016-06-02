@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qun_myrank_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.fengwo.reading.view.Viewsimpletitle
+        android:id="@+id/viewsimpletitle_qun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.fengwo.reading.view.Viewsimpletitle>
+
+    <ScrollView
+        android:id="@+id/sv_qun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_qun_detail_memrank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/y30">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_qun_detail_userface"
+
+
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y80"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_qun_detail_userinfo_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:layout_toRightOf="@id/iv_qun_detail_userface"
+                        android:text=""
+                        android:textColor="@color/text_32"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:id="@+id/iv_qun_detail_goto_inqunweekrank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_qian" />
+
+                    <TextView
+                        android:id="@+id/tv_qun_detail_goto_inqunweekrank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x10"
+
+                        android:layout_toLeftOf="@id/iv_qun_detail_goto_inqunweekrank"
+                        android:text="组内排名"
+                        android:textColor="@color/text_b2"
+                        android:textSize="@dimen/y30" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_marginTop="@dimen/y30"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y60"
+                    android:paddingTop="@dimen/y60">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.495"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_qun_detail_userinfo_rank"
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/y71" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y30"
+                            android:text="组内排名"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-10dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@color/bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.495"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/tv_qun_detail_userinfo_score"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/y71" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y30"
+                            android:text="个人积分"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_qun_detail_grouprank"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/y30">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_qun_detail_qunname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="有书共读第一二三群"
+                        android:textColor="@color/text_32"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:id="@+id/iv_qun_detail_goto_allqunweekrank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_qian" />
+
+                    <TextView
+                        android:id="@+id/tv_qun_detail_goto_allqunweekrank"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_toLeftOf="@id/iv_qun_detail_goto_allqunweekrank"
+                        android:text="群间排名"
+                        android:textColor="@color/text_b2"
+                        android:textSize="@dimen/y30" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_marginTop="@dimen/y30"
+                    android:background="@color/bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y60"
+                    android:paddingTop="@dimen/y60">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.495"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_qun_detail_rank"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/y71" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y30"
+                            android:text="群组排名"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-10dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@color/bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.495"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_qun_detail_score"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/y71" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y30"
+                            android:text="群组积分"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-  领先全国"
+                        android:textColor="@color/text_b2"
+                        android:textSize="@dimen/y28" />
+
+                    <TextView
+                        android:id="@+id/tv_qun_detail_rate"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0%"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/y28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="的群组  -"
+                        android:textColor="@color/text_b2"
+                        android:textSize="@dimen/y28" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.fengwo.reading.view.MyGridView
+                android:id="@+id/gv_qun_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="@dimen/x20"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/y40"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:paddingTop="@dimen/y20"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/x30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y2"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@color/bg" />
+
+            <TextView
+                android:id="@+id/tv_qun_detail_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:nestedScrollingEnabled="false"
+                android:numColumns="5"
+                android:orientation="vertical"
+                android:padding="@dimen/y30"
+                android:text="查看全部群成员"
+                android:textColor="@color/green_17"
+                android:textSize="@dimen/x28"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

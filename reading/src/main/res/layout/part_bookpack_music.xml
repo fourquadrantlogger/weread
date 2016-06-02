@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/rl_music_voice"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y228">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y228"
+        android:orientation="vertical"
+        android:background="@drawable/kuang_line">
+
+    <LinearLayout
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y136">
+
+        <ImageView
+            android:id="@+id/iv_music_voice"
+            android:layout_width="@dimen/x48"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x36"
+            android:src="@drawable/zaowandu_play"
+            android:layout_marginTop="@dimen/y44" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x36"
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/y29">
+
+            <TextView
+                android:id="@+id/tv_music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+            <TextView
+                android:id="@+id/tv_music_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来自有书共读"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y28" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_music_xiazai"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/download_bookpack"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_marginRight="@dimen/x46" />
+    </LinearLayout>
+        <View
+            android:layout_gravity="top"
+            android:background="@color/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            />
+        <RelativeLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y72"
+            android:paddingTop="@dimen/y30">
+
+            <TextView
+                android:id="@+id/tv_music_media_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y22"
+                android:layout_marginLeft="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/tv_music_media_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x40"
+                android:text="0:00"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y22"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/sb_music_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y209"
+        android:layout_gravity="top"
+        android:layout_marginLeft="-5dp"
+
+        android:layout_marginRight="-5dp"
+        android:clickable="true"
+        android:max="600"
+
+        android:thumbOffset="0dp"
+
+        android:outlineProvider="background"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+
+        android:progressDrawable="@drawable/seekbar_progress_bookpack"
+        android:splitTrack="false"
+        android:thumb="@drawable/seekbar_thumb_bookpack"
+        android:progress="0" />
+
+
+</FrameLayout>

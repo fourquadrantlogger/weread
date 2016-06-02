@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_grgoup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_privilege_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:scaleType="fitXY"
+        android:src="@drawable/close" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="@dimen/x550"
+        android:layout_height="@dimen/y550"
+        android:layout_below="@+id/iv_privilege_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@drawable/btn_update_white">
+
+        <ImageView
+            android:id="@+id/iv_privilege_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y70"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_privilege_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_privilege_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y30"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y40" />
+
+        <TextView
+            android:id="@+id/tv_privilege_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y80"
+            android:layout_below="@+id/tv_privilege_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y70"
+            android:background="@drawable/btn_update_green"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x40"
+            android:paddingRight="@dimen/x40"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/y40" />
+    </RelativeLayout>
+
+</RelativeLayout>

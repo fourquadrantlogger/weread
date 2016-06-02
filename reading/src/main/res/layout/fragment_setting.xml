@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x28"
+        android:gravity="center_vertical"
+        android:text="社交帐号绑定"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y26" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/background_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:drawableLeft="@drawable/setting_logo_wb"
+            android:drawablePadding="@dimen/x15"
+            android:gravity="center"
+            android:text="新浪微博"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_setting_bd_wb"
+            android:layout_width="@dimen/x126"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:background="@drawable/setting_green"
+            android:gravity="center"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/background_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:drawableLeft="@drawable/setting_logo_qq"
+            android:drawablePadding="@dimen/x15"
+            android:gravity="center"
+            android:text="QQ"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_setting_bd_qq"
+            android:layout_width="@dimen/x126"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:background="@drawable/setting_green"
+            android:gravity="center"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/background_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:drawableLeft="@drawable/setting_logo_wx"
+            android:drawablePadding="@dimen/x15"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_setting_bd_wx"
+            android:layout_width="@dimen/x126"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:background="@drawable/setting_green"
+            android:gravity="center"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y28" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_switch1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/background_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="使用2G/3G/4G网络播放"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+            <Button
+                android:id="@+id/bt_remind_switch1"
+                android:layout_width="@dimen/x102"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                android:background="@drawable/switchbutton_on" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_switch2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/background_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="使用2G/3G/4G网络下载"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+            <Button
+                android:id="@+id/bt_remind_switch2"
+                android:layout_width="@dimen/x102"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                android:background="@drawable/switchbutton_on" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_remind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/background_white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:src="@drawable/title_jiantou_right_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:text="早晚读提醒设置"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_with"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y1"
+        android:background="@drawable/background_white">
+
+        <ImageView
+            android:id="@+id/imageView_fragment_setting_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:src="@drawable/title_jiantou_right_gray" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:text="关于有书"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y1"
+        android:background="@drawable/background_white">
+
+        <ImageView
+            android:id="@+id/imageView_fragment_setting_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:src="@drawable/title_jiantou_right_gray" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:text="清理缓存"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/textView_fragmentsetting_cachefoldersize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@+id/imageView_fragment_setting_clear"
+            android:layout_toStartOf="@+id/imageView_fragment_setting_clear"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/background_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="退出登录"
+            android:textColor="@color/red"
+            android:textSize="@dimen/y30" />
+    </RelativeLayout>
+
+</LinearLayout>

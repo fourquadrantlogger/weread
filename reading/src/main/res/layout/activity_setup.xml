@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_setup_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/y50">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_setup_dot1"
+                android:layout_width="@dimen/y14"
+                android:layout_height="@dimen/y14"
+                android:background="@drawable/dot_focused" />
+
+            <View
+                android:id="@+id/v_setup_dot2"
+                android:layout_width="@dimen/y14"
+                android:layout_height="@dimen/y14"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@drawable/dot_normal" />
+
+            <View
+                android:id="@+id/v_setup_dot3"
+                android:layout_width="@dimen/y14"
+                android:layout_height="@dimen/y14"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@drawable/dot_normal" />
+
+            <View
+                android:id="@+id/v_setup_dot4"
+                android:layout_width="@dimen/y14"
+                android:layout_height="@dimen/y14"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@drawable/dot_normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_setup_go"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y70"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/y170"
+        android:background="@drawable/setup_green"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textColor="@color/white"
+        android:textSize="@dimen/y34" />
+
+</FrameLayout>

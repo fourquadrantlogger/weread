@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:paddingBottom="@dimen/y27"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:background="@drawable/background_white"
+        android:paddingTop="@dimen/y27" >
+
+        <ImageView
+            android:id="@+id/iv_item_hottopics_cover"
+            android:layout_width="@dimen/y146"
+            android:layout_height="@dimen/y146"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover" />
+
+        <TextView
+            android:id="@+id/tv_item_hottopics_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_hottopics_cover"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/iv_item_hottopics_cover"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_item_hottopics_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_item_hottopics_cover"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/iv_item_hottopics_cover"
+            android:text=""
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y20" />
+
+        <TextView
+            android:id="@+id/tv_item_hottopics_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/iv_item_hottopics_cover"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y24" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_item_hottopics_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x28"
+        android:background="@color/line" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_commentedit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/et_commentedit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_commentedit_layout"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="..."
+            android:paddingBottom="@dimen/y24"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:paddingTop="@dimen/y24"
+            android:scrollbars="none"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textColorHint="@color/text_a8"
+            android:textSize="@dimen/y30" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/rl_commentedit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/tv_commentedit_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                android:text="最多0字"
+                android:textColor="@color/text_a8"
+                android:textSize="@dimen/y30" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

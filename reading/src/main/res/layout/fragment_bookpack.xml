@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_readbook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_readbook_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_bookpack_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_readbook_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/wv_readbook_302"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28" />
+    </LinearLayout>
+    <!--评论输入框-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:layout_above="@+id/rl_readbook_bottom"
+        android:background="@drawable/gradient_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_readbook_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_readbook_pl"
+                android:layout_width="@dimen/x347"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:background="@drawable/readbook_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="写评论..."
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y30" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_readbook_pl"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_readbook_pl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_readbook_liuyan_img"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:src="@drawable/zaowanducomment" />
+
+                    <TextView
+                        android:id="@+id/tv_readbook_liuyan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y98"
+                        android:layout_above="@+id/iv_readbook_liuyan_img"
+                        android:layout_marginBottom="-10dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@+id/iv_readbook_liuyan_img"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/y20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_readbook_shoucang"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_readbook_shoucang"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:src="@drawable/collect_no" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_readbook_fx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/x50"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zaowandushare" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <ImageView
+        android:id="@+id/iv_readbook_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y4"
+        android:padding="@dimen/x28"
+        android:src="@drawable/title_jiantou_left_white" />
+
+</RelativeLayout>

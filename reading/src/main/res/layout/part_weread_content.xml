@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_read_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/kuang_bg">
+
+        <ImageView
+            android:id="@+id/iv_read_img"
+            android:layout_width="@dimen/y50"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/read_tongzhi" />
+
+        <TextView
+            android:id="@+id/tv_read_btn"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/textview_tag"
+            android:gravity="center"
+            android:textColor="@color/green_17"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_read_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_toLeftOf="@+id/tv_read_btn"
+            android:layout_toRightOf="@+id/iv_read_img"
+            android:ellipsize="end"
+            android:hint="活动："
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/y30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/kuang_bg"
+        >
+
+        <ImageView
+            android:id="@+id/iv_homepage"
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/y28"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:scaleType="fitXY"
+            android:src="@drawable/homepage" />
+
+        <TextView
+            android:layout_toRightOf="@id/iv_homepage"
+            android:id="@+id/textView_weread_nowweek_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x12"
+            android:text="本周共度"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/y30"
+            android:layout_gravity="center_vertical" />
+        <LinearLayout
+            android:id="@+id/ll_shudan"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_shudan"
+                android:text="查看六月书单"
+                android:textSize="@dimen/y26"
+                android:textColor="@color/text_99"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/y6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="@color/e5" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.fengwo.reading.view.MyListView
+        android:id="@+id/listView_nowweek_bookpacklist"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rl_weread_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kuang_bg">
+
+        <TextView
+            android:id="@+id/textView_weread_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/jiantou_bottom"
+            android:gravity="center_horizontal"
+            android:nestedScrollingEnabled="false"
+            android:numColumns="5"
+            android:orientation="vertical"
+            android:padding="@dimen/y30"
+            android:text="查看更多 "
+
+            android:textSize="@dimen/y28"
+            android:textColor="@color/text_66">
+        </TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_weread_historyweek_book"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/kuang_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/y28"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:scaleType="fitXY"
+            android:src="@drawable/homepage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_weight="1"
+            android:text="往期共读"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/y30" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/arrow_hou" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/kuang_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/y28"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/homepage"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint=""
+            android:singleLine="true"
+            android:text="今日推荐"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/y30"/>
+    </LinearLayout>
+
+    <com.fengwo.reading.view.MyListView
+        android:id="@+id/listView_todayrecommend"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</LinearLayout>

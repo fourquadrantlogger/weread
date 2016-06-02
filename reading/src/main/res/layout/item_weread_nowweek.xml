@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kuang_bg">
+
+        <ImageView
+            android:id="@+id/iv_item_index_readornot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28" />
+
+        <TextView
+            android:id="@+id/tv_item_index_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@+id/iv_item_index_readornot"
+            android:text="week"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_item_index_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_index_week"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_item_index_week"
+            android:text="time"
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/y22" />
+
+        <TextView
+            android:id="@+id/tv_item_index_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_index_time"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_item_index_time"
+            android:background="@drawable/kuang_read"
+            android:paddingBottom="@dimen/y3"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:paddingTop="@dimen/y3"
+            android:text="最新"
+            android:textColor="@color/green"
+            android:textSize="@dimen/y22" />
+
+        <TextView
+            android:id="@+id/tv_item_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_index_week"
+            android:layout_below="@+id/tv_item_index_week"
+            android:layout_marginTop="@dimen/y16"
+            android:text="title"
+            android:textColor="@color/text_80"
+            android:textSize="@dimen/y28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_below="@+id/tv_item_index_title"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28" />
+
+    </RelativeLayout>
+</LinearLayout>

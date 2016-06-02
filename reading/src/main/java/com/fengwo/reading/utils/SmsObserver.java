@@ -1,0 +1,66 @@
+package com.fengwo.reading.utils;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.database.ContentObserver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Handler;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * 
+ * 手机短信
+ *
+ */
+public class SmsObserver extends ContentObserver {
+
+	private Context context;
+	private Handler handler;
+
+	public SmsObserver(Context context, Handler handler) {
+		super(handler);
+		this.context = context;
+		this.handler = handler;
+	}
+
+	/**
+	 * 接收到短信时调用此方法
+	 */
+	@SuppressLint("NewApi")
+	@Override
+	public void onChange(boolean selfChange, Uri uri) {
+		super.onChange(selfChange, uri);
+
+//		System.out.println("SMS======"+uri.toString());
+
+		if (uri.toString().equals("content://sms/raw")) {
+			return;
+		}
+
+		Uri inboxUri = Uri.parse("content://sms/inbox");
+		Cursor cursor = context.getContentResolver().query(inboxUri, null,
+				null, null, "date desc");
+		if (cursor != null) {
+			if (cursor.moveToFirst()) {
+				String address = cursor.getString(cursor
+						.getColumnIndex("address"));
+				String body = cursor.getString(cursor.getColumnIndex("body"));
+
+//				System.out.println("SMS======发件人为："+address);
+//				System.out.println("SMS======短信内容为："+body);
+
+				Pattern pattern = Pattern.compile("(\\d{6})");// 正则表达式
+				Matcher matcher = pattern.matcher(body);
+				if (matcher.find()) {
+					String code = matcher.group(0);
+					handler.obtainMessage(1, code).sendToTarget();
+				}
+			}
+		}
+
+	}
+
+}

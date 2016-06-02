@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qun_weekrank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.fengwo.reading.view.Viewsimpletitle
+        android:id="@+id/viewsimpletitle_qun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/layout_qun_bookinfo"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y1">
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:background="@color/white"
+                android:padding="@dimen/y25"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/item_rank"></include>
+            </LinearLayout>
+
+            <com.fengwo.reading.view.MyListView
+                android:id="@+id/lv_qun_allrank"
+
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:paddingLeft="@dimen/y30"
+                android:paddingRight="@dimen/y30">
+            </com.fengwo.reading.view.MyListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

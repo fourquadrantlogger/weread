@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_achieve_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110">
+
+        <TextView
+            android:id="@+id/tv_item_achieve_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:drawablePadding="@dimen/x20"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_item_achieve_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_item_achieve_title"
+            android:text=""
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_item_achieve_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@+id/ImageView1"
+            android:text="aa"
+            android:textColor="@color/text_80"
+            android:textSize="@dimen/y26" />
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:src="@drawable/myachieve_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

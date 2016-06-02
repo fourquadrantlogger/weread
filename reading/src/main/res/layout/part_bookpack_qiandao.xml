@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_readbook_qiandao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:paddingBottom="30dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/line"
+        android:layout_marginRight="@dimen/x28" />
+
+    <ImageView
+        android:id="@+id/iv_readbook_qiandao"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/y206"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="@dimen/y40" />
+
+    <TextView
+        android:id="@+id/tv_readbook_qiandao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/yuan_green"
+        android:gravity="center"
+        android:text="签到"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/y30" />
+
+    <LinearLayout
+        android:id="@+id/bookpack_qiandao_notify"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="请在当天早晚读进行签到"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_64"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="早读签到时间  06:00~14:00\n晚读签到时间  17:00~01:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_80" />
+    </LinearLayout>
+</FrameLayout>

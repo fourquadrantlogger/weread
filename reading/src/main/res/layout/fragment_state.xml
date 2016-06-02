@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_state_gk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y130"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="@dimen/y10"
+            android:text="所有书友可见"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y28" />
+
+        <ImageView
+            android:id="@+id/iv_state_gk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:src="@drawable/state_gouxuan"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_toRightOf="@+id/iv_state_gk"
+            android:text="公开"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_state_sr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y130"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_state_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:src="@drawable/state_gouxuan"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_toRightOf="@+id/iv_state_sr"
+            android:text="私密"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="@dimen/y10"
+            android:text="仅自己可见"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y28" />
+    </RelativeLayout>
+
+</LinearLayout>

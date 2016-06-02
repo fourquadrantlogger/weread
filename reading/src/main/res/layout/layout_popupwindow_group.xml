@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_group_ysq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y60"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/y28"
+                        android:background="@drawable/btn_group_green"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/x40"
+                        android:paddingRight="@dimen/x40"
+                        android:text="有书圈"
+                        android:textColor="@color/green_3d"
+                        android:textSize="@dimen/y32" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:layout_marginTop="@dimen/y30"
+                        android:background="@color/text_b2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y90">
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x28"
+                            android:background="@color/text_b2" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:layout_toEndOf="@+id/view2"
+                            android:layout_toRightOf="@+id/view2"
+                            android:text="我的群组"
+                            android:textColor="@color/text_b2"
+                            android:textSize="@dimen/y30" />
+
+                        <View
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:layout_toRightOf="@+id/tv1"
+                            android:background="@color/text_b2" />
+                    </RelativeLayout>
+
+                    <com.fengwo.reading.main.group.widget.TagListView xmlns:f="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tagview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/y30"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        f:horizontalSpacing="@dimen/x20"
+                        f:orientation="horizontal"
+                        f:verticalSpacing="@dimen/x30" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

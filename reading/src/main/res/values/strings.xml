@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">有书共读</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan_text"></string>
+    <string name="network_check">加载失败,请检查网络</string>
+    <string name="json_error">系统繁忙,请稍后再试</string>
+    <string name="播放一次即可缓存">喵~播放一次即可缓存</string>
+    <string name="音频文件已经下载">喵~该音频文件已经下载了啦</string>
+    <string name="还需要再努力哦">还需要再努力哦</string>
+    <string name="使用勋章">使用勋章</string>
+    <string name="不使用勋章">不使用勋章</string>
+    <string name="开始下载">开始下载</string>
+    <string name="title_activity_setting_for_with_you_shu">SettingForWithYouShu</string>
+    <string name="title_activity_with_you_shu_agreement">WithYouShuAgreement</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kuang_bg"
+        android:paddingBottom="@dimen/x34"
+        android:paddingLeft="@dimen/x34"
+        android:paddingRight="@dimen/y30"
+        android:paddingTop="@dimen/y30">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_item_title_weread_nodayrecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/textView_item_content_weread_nodayrecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView_item_title_weread_nodayrecommend"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y20"
+                android:ellipsize="end"
+                android:enabled="true"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text_80"
+                android:textSize="@dimen/y28" />
+
+            <TextView
+                android:id="@+id/textView_item_timetype_weread_nodayrecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView_item_content_weread_nodayrecommend"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@drawable/kuang_read"
+                android:paddingBottom="@dimen/y3"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:paddingTop="@dimen/y3"
+                android:text="美文"
+                android:textColor="@color/green"
+                android:textSize="@dimen/y22" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image_todayrecommend"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y150"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+</LinearLayout>

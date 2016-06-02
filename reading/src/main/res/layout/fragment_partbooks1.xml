@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_grgoup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <TextView
+        android:id="@+id/tv_books_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="你还没有收藏内容哦 你还没有发布随笔哦"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y30"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.fengwo.reading.view.MyListView
+                android:id="@+id/lv_books"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/rl_books_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_books_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y80"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/x16"
+                    android:drawableRight="@drawable/myachieve_right"
+                    android:gravity="center"
+                    android:text="解锁更多共读"
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y32" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y20"
+                    android:layout_below="@+id/tv_books_all"
+                    android:background="@color/bg" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

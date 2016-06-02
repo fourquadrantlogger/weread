@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/text_23"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x28"
+        android:height="@dimen/y80"
+        android:drawableLeft="@drawable/homepage"
+        android:drawablePadding="@dimen/x12"
+        android:gravity="center"
+        android:text="今日经验值清单"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/y28" />
+
+    <com.fengwo.reading.view.MyListView
+        android:id="@+id/mylistview_jingyanzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginRight="@dimen/x32" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/textView_youshubang_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/y30"
+        android:text="还没有完成任务"
+        android:textColor="@color/text_b2"
+        android:textSize="@dimen/x28"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_youshubang_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView_youshubang_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/jiantou_bottom"
+            android:nestedScrollingEnabled="false"
+            android:numColumns="5"
+            android:orientation="vertical"
+            android:padding="@dimen/y30"
+            android:text="查看更多详情"
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/x28"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="@color/line2" />
+</LinearLayout>

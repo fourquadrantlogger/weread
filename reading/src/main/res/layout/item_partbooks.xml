@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:background="@color/e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item_booklist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@drawable/kuang_bg">
+
+        <ImageView
+            android:id="@+id/iv_item_booklist_bookcover"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/e5"
+            android:padding="@dimen/x1"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover" />
+
+        <TextView
+            android:id="@+id/tv_item_booklist_booktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_booklist_bookcover"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/tv_item_booklist_qi"
+            android:layout_toRightOf="@+id/iv_item_booklist_bookcover"
+            android:singleLine="true"
+            android:text="图书名称"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y34" />
+
+        <TextView
+            android:id="@+id/tv_item_booklist_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_item_booklist_bookcover"
+            android:layout_marginRight="@dimen/x40"
+            android:singleLine="true"
+            android:text="第n期"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_item_booklist_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_booklist_booktitle"
+            android:layout_below="@+id/tv_item_booklist_booktitle"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginTop="@dimen/y20"
+            android:singleLine="true"
+            android:text="作者"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y24" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/iv_item_booklist_bookcover"
+            android:layout_alignLeft="@+id/tv_item_booklist_author"
+            android:layout_alignStart="@+id/tv_item_booklist_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_partbooks_localsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/x28"
+                android:singleLine="true"
+                android:text="30MB"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y26" />
+            <TextView
+                android:id="@+id/tv_item_booklist_alreadycount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/x28"
+                android:singleLine="true"
+                android:text="已下载 6 篇"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y26" />
+
+
+            <TextView
+                android:id="@+id/tv_item_booklist_wereadtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/x28"
+                android:singleLine="true"
+                android:text="共读时间"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_item_booklist_deletelocal"
+            android:layout_width="@dimen/x78"
+            android:layout_height="@dimen/y78"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x28"
+            android:padding="@dimen/x1"
+            android:scaleType="fitXY"
+            android:src="@drawable/offline_download" />
+    </RelativeLayout>
+</LinearLayout>

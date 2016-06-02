@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <TextView
+        android:layout_marginTop="@dimen/y450"
+        android:id="@+id/tv_otheruser_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:gravity="center"
+        android:text="还没有发布随笔哦"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y30"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_otheruser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:focusable="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/iv_otheruser_lift"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:paddingLeft="@dimen/y28"
+        android:paddingRight="@dimen/y28"
+        android:src="@drawable/title_jiantou_left_white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_otheruser_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y236"
+            android:scaleType="fitXY"
+            android:src="@drawable/otheruser_bg" />
+
+        <ImageView
+            android:id="@+id/iv_otheruser_lift2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/y28"
+            android:paddingRight="@dimen/y28"
+            android:src="@drawable/title_jiantou_left_white" />
+
+        <TextView
+            android:id="@+id/tv_otheruser_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/y30"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lxq="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_popupwindow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_location_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:background="@drawable/background_white"
+                android:text="取消"
+                android:textColor="@color/text_32"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_location_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_white"
+                android:padding="15dp"
+                android:text="确定"
+                android:textColor="@color/text_32"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/text_32"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <com.fengwo.reading.view.ScrollerNumberPicker
+                android:id="@+id/snp_popupwindow_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                lxq:itemNumber="5"
+                lxq:lineColor="#ffff6000"
+                lxq:maskHight="32dp"
+                lxq:noEmpty="true"
+                lxq:normalTextColor="#777"
+                lxq:normalTextSize="14sp"
+                lxq:selecredTextColor="#ff000000"
+                lxq:selecredTextSize="22sp"
+                lxq:unitHight="50dp" />
+
+            <com.fengwo.reading.view.ScrollerNumberPicker
+                android:id="@+id/snp_popupwindow_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                lxq:itemNumber="5"
+                lxq:lineColor="#ffff6000"
+                lxq:maskHight="32dp"
+                lxq:noEmpty="true"
+                lxq:normalTextColor="#777"
+                lxq:normalTextSize="14sp"
+                lxq:selecredTextColor="#ff000000"
+                lxq:selecredTextSize="22sp"
+                lxq:unitHight="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

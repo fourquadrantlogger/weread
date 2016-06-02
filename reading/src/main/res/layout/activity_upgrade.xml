@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_upgrade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="@dimen/x550"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y260"
+        android:background="@drawable/btn_upgrade_red">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y190">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:background="@color/white" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/tv_upgrade_vip"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_upgrade_dengji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="20dp"
+                android:text="我的有书等级已达到"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/tv_upgrade_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-12dp"
+                android:layout_toRightOf="@+id/tv_upgrade_dengji"
+                android:text=""
+                android:textColor="@color/yellow_fdf400"
+                android:textSize="@dimen/y34" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="@dimen/y80">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:text="已参加有书共读计划  - - - - - -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/tv_upgrade_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/tv1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/y42"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_upgrade_day"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/tv_upgrade_day"
+                android:text="/天"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginTop="@dimen/y20">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:text="已读书  - - - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/tv_upgrade_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/tv2"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/y42"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_upgrade_books"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/tv_upgrade_books"
+                android:text="/本"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_marginTop="@dimen/y20">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x80"
+                android:text="发布随笔  - - - - - - - - - - - - - - -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/tv_upgrade_suibi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/tv3"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/y42"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_upgrade_suibi"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/tv_upgrade_suibi"
+                android:text="/条"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_upgrade_fenxiang"
+            android:layout_width="@dimen/x330"
+            android:layout_height="@dimen/y80"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y60"
+            android:background="@drawable/btn_upgrade_yellow"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/red_f3512b"
+            android:textSize="@dimen/y40"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_upgrade_fenxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y60"
+            android:layout_marginTop="@dimen/y20"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/y22" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_upgrade_jiangbei"
+        android:layout_width="@dimen/x550"
+        android:layout_height="@dimen/y410"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/upgrade_jiangbei" />
+
+    <ImageView
+        android:id="@+id/iv_upgrade_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y298"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_privilege_cancel"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-14dp"
+        android:layout_marginTop="@dimen/y90"
+        android:layout_toEndOf="@+id/iv_upgrade_jiangbei"
+        android:layout_toRightOf="@+id/iv_upgrade_jiangbei"
+        android:scaleType="fitXY"
+        android:src="@drawable/close" />
+
+</RelativeLayout>

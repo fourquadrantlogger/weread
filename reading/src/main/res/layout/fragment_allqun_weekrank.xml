@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.fengwo.reading"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/ll_qun_weekrank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.fengwo.reading.view.Viewsimpletitle
+        android:id="@+id/viewsimpletitle_qun_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/layout_qun_bookinfo"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/y30"
+                android:layout_marginTop="@dimen/y30">
+
+                <TextView
+                    android:id="@+id/tv_allqun_groupname"
+                    android:text=""
+                    android:textSize="@dimen/y34"
+                    android:textColor="@color/text_4c"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/bg"
+                    android:layout_height="@dimen/y2"
+                    android:layout_marginTop="@dimen/y30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/y40"
+                        android:layout_weight="0.33">
+
+                        <Button
+                            android:id="@+id/bt_allqun_qun_score"
+
+                            android:layout_width="@dimen/x130"
+                            android:layout_height="@dimen/x130"
+
+                            android:text=""
+                            android:textSize="@dimen/y34"
+                            android:background="@drawable/yuan_greenborder"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#21bb98" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="群积分"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/y24"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y20" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/y40"
+                        android:layout_weight="0.33">
+
+                        <Button
+                            android:id="@+id/bt_allqun_qun_rank"
+
+                            android:layout_width="@dimen/x130"
+                            android:layout_height="@dimen/x130"
+
+                            android:text=""
+                            android:textSize="@dimen/y34"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#ff3d5d"
+                            android:background="@drawable/yuan_redborder">
+                        </Button>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="群间排名"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/y24"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y20" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/y40"
+                        android:layout_weight="0.33">
+
+                        <com.fengwo.reading.view.RoundProgressBar
+                            android:id="@+id/roundprogressbar_weekrank_allqun"
+                            android:layout_width="@dimen/x130"
+                            android:layout_height="@dimen/x130"
+
+                            android:layout_gravity="center_horizontal"
+
+                            android_custom:roundColor="#ff8095"
+                            android_custom:roundProgressColor="#ff3d5d"
+
+                            android_custom:textIsDisplayable="true"
+                            android:textColor="#ff3d5d"
+                            app:textSize="@dimen/y34"
+                            android:textAlignment="center"
+                            android_custom:roundWidth="@dimen/x5"
+                            app:textColor="#ff3d5d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="战胜对手比率"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/y24"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/y20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.fengwo.reading.view.MyListView
+                android:id="@+id/lv_qun_allrank"
+
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:paddingLeft="@dimen/y30"
+                android:paddingRight="@dimen/y30">
+            </com.fengwo.reading.view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

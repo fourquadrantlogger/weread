@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_explain_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y90"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_explain_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:text=""
+                    android:textColor="@color/text_80"
+                    android:textSize="@dimen/y32" />
+
+                <TextView
+                    android:id="@+id/tv_explain_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_explain_left"
+                    android:layout_alignBottom="@+id/tv_explain_left"
+                    android:layout_toEndOf="@+id/tv_explain_left"
+                    android:layout_toRightOf="@+id/tv_explain_left"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:text=""
+                    android:textColor="@color/text_32"
+                    android:textSize="@dimen/y40" />
+
+                <TextView
+                    android:id="@+id/tv_explain_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_explain_num"
+                    android:layout_alignBottom="@+id/tv_explain_num"
+                    android:layout_toEndOf="@+id/tv_explain_num"
+                    android:layout_toRightOf="@+id/tv_explain_num"
+                    android:text=""
+                    android:textColor="@color/text_80"
+                    android:textSize="@dimen/y32" />
+
+                <TextView
+                    android:id="@+id/tv_explain_ratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x28"
+                    android:text=""
+                    android:textColor="@color/text_80"
+                    android:textSize="@dimen/y28" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_explain_go"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:text="进行任务"
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y34" />
+
+                <TextView
+                    android:id="@+id/tv_explain_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/publishmessage_green"
+                    android:paddingBottom="@dimen/y12"
+                    android:paddingLeft="@dimen/x40"
+                    android:paddingRight="@dimen/x40"
+                    android:paddingTop="@dimen/y12"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/y34" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_explain_top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingTop="@dimen/y40"
+                    android:text="经验值规则"
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y30" />
+
+                <com.fengwo.reading.view.MyListView
+                    android:id="@+id/mlv_explain_show1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_explain_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_explain_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingTop="@dimen/y40"
+                    android:text=""
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y30" />
+
+                <com.fengwo.reading.view.MyListView
+                    android:id="@+id/mlv_explain_show2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_explain_tv2"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_explain_top3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_explain_zhushi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingTop="@dimen/y20"
+                    android:text=""
+                    android:textColor="@color/text_80"
+                    android:textSize="@dimen/y28" />
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_explain_zhushi"
+                    android:background="@color/bg"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingTop="@dimen/y40"
+                    android:text="如何打卡签到"
+                    android:textColor="@color/text_64"
+                    android:textSize="@dimen/y30" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview2"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingTop="@dimen/y57"
+                    android:src="@drawable/dot_focused" />
+
+                <TextView
+                    android:id="@+id/tv_explain_shuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_marginTop="@dimen/y40"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:lineSpacingMultiplier="1.3"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x28"
+                    android:text="在签到时间内，进入当天的早晚读页面，阅读文章，在文章末尾处点击签到"
+                    android:textColor="@color/text_32"
+                    android:textSize="@dimen/y34" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y2"
+                    android:layout_below="@+id/tv_explain_shuoming"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/e5" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_explain_shuoming"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:layout_marginTop="@dimen/y50"
+                    android:src="@drawable/explain_signin" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/bg" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

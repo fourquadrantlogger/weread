@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_remind"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/layout_title_view" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@drawable/background_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:text="阅读提醒"
+                    android:textColor="@color/text_32"
+                    android:textSize="@dimen/y32" />
+
+                <Button
+                    android:id="@+id/bt_remind_switch"
+                    android:layout_width="@dimen/x102"
+                    android:layout_height="@dimen/y62"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/switchbutton_on" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remind_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_am"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/background_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="早读提醒时间"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+            <TextView
+                android:id="@+id/tv_remind_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                android:text="07:00"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y36" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_pm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/background_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="晚读提醒时间"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y32" />
+
+            <TextView
+                android:id="@+id/tv_remind_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                android:text="22:00"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y36" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

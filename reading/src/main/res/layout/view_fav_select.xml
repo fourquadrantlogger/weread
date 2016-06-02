@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="随笔"
+        android:background="@drawable/fav_left"
+        android:textColor="@color/green_17"
+        android:textSize="@dimen/y30"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_weight="0.5" />
+    <TextView
+        android:id="@+id/textView_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="早晚读"
+        android:background="@drawable/fav_right"
+        android:textColor="@color/white"
+        android:textSize="@dimen/y30"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_weight="0.5" />
+</LinearLayout>

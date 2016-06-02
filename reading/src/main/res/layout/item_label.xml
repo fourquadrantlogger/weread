@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item_addlabel_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x28"
+        android:singleLine="true"
+        android:text="#热门话题#"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y28" />
+
+    <View
+        android:id="@+id/v_item_addlabel_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x28"
+        android:background="@color/line" />
+
+</LinearLayout>

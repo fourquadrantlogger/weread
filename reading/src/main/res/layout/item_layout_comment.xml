@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_comment_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white">
+
+        <ImageView
+            android:id="@+id/iv_item_comment_avatar"
+            android:layout_width="@dimen/y80"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@drawable/avatar"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/iv_item_comment_sex"
+            android:layout_width="@dimen/y25"
+            android:layout_height="@dimen/y25"
+            android:layout_alignBottom="@+id/iv_item_comment_avatar"
+            android:layout_alignRight="@+id/iv_item_comment_avatar" />
+
+        <TextView
+            android:id="@+id/tv_item_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_comment_avatar"
+            android:layout_marginLeft="@dimen/x26"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_toRightOf="@+id/iv_item_comment_avatar"
+            android:drawablePadding="@dimen/x20"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y28" />
+
+        <TextView
+            android:id="@+id/tv_item_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_comment_name"
+            android:layout_below="@+id/tv_item_comment_name"
+            android:layout_marginTop="@dimen/y6"
+            android:text="time"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y28" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_comment_zan"
+            android:layout_width="@dimen/x100"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y50">
+
+            <TextView
+                android:id="@+id/tv_item_comment_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/comment_zan"
+                android:drawablePadding="@dimen/x8"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_comment_pinglun"
+            android:layout_width="@dimen/x100"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y50"
+            android:layout_toLeftOf="@+id/rl_item_comment_zan"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_item_comment_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/comment_xiaoxi"
+                android:drawablePadding="@dimen/x8"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y22" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_comment_time"
+            android:layout_below="@+id/tv_item_comment_time"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_comment_huifu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg"
+                android:padding="4dp"
+                android:text="huifu"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y32"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_item_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textColor="@color/text_64"
+                android:textSize="@dimen/y32" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_below="@+id/ll_content"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/line" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_comment_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginTop="@dimen/y60"
+        android:text="还没有评论,快来抢沙发!"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/y28"
+        android:visibility="gone" />
+</LinearLayout>

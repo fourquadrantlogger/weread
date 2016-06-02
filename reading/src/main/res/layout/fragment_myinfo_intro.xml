@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_myinfointro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_myinfo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y24"
+            android:layout_marginRight="@dimen/x28"
+            android:text="30"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y26" />
+
+        <EditText
+            android:id="@+id/et_myinfo_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_myinfo_count"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/x24"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint=""
+            android:maxLength="30"
+            android:text=""
+            android:textColor="@color/text_32"
+            android:textColorHint="@color/text_32"
+            android:textSize="@dimen/y32" >
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>

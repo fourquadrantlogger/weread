@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/y150"
+        android:layout_height="@dimen/y150">
+
+        <ImageView
+            android:id="@+id/iv_achieve_jiangli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_achieve_jiangli"
+            android:layout_width="@dimen/x114"
+            android:layout_height="@dimen/y32"
+            android:layout_alignLeft="@+id/iv_achieve_jiangli"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/iv_achieve_jiangli"
+            android:layout_marginBottom="@dimen/y10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/y22" />
+    </RelativeLayout>
+
+</LinearLayout>

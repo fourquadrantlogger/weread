@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_groupdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_groupdetails_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/relativeLayout7"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y10"
+            android:layout_above="@+id/relativeLayout7"
+            android:background="@drawable/gradient_bg" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_groupdetails_liuyan"
+                android:layout_width="@dimen/x347"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x28"
+                android:background="@drawable/readbook_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="写评论"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y30" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y62"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_groupdetails_liuyan"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_groupdetails_liuyan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_groupdetails_liuyan_img"
+                        android:layout_width="@dimen/x47"
+                        android:layout_height="@dimen/x47"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:src="@drawable/zaowanducomment" />
+
+                    <TextView
+                        android:id="@+id/tv_groupdetails_liuyan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/iv_groupdetails_liuyan_img"
+                        android:layout_marginBottom="-9dp"
+                        android:layout_marginLeft="-9dp"
+                        android:layout_toRightOf="@+id/iv_groupdetails_liuyan_img"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/y20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_groupdetails_zan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_groupdetails_zan_img"
+                        android:layout_width="@dimen/x47"
+                        android:layout_height="@dimen/x47"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/comment_zan_big" />
+
+                    <TextView
+                        android:id="@+id/tv_groupdetails_zan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/iv_groupdetails_zan_img"
+                        android:layout_marginBottom="-9dp"
+                        android:layout_marginLeft="-9dp"
+                        android:layout_toRightOf="@+id/iv_groupdetails_zan_img"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/y20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_groupdetails_fenxiang"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/x47"
+                        android:layout_height="@dimen/x47"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/comment_fenxiang_big" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

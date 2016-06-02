@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_publishfeelings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <EditText
+        android:id="@+id/et_publishfeelings_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="无标题"
+        android:maxLength="100"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_32"
+        android:textColorHint="@color/text_a8"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/y32" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+
+    <EditText
+        android:id="@+id/et_publishfeelings_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y360"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="优秀随笔将被优先展示"
+        android:maxLength="800"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y28"
+        android:text=""
+        android:textColor="@color/text_32"
+        android:textColorHint="@color/text_a8"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/y28" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_publishfeelings_zishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:text=""
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y30" />
+
+        <RelativeLayout
+            android:id="@+id/rl_publishfeelings_tianjia"
+            android:layout_width="@dimen/x164"
+            android:layout_height="@dimen/y52"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:background="@drawable/publishfeelings_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/publishfeelings_jia"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="添加图片"
+                android:textColor="@color/text_98"
+                android:textSize="@dimen/y24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_publishfeelings_biaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/rl_publishfeelings_tianjia"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="#"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y36" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_publishfeelings_tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_publishfeelings_bookname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:drawableLeft="@drawable/publishfeelings_books"
+            android:drawablePadding="@dimen/x20"
+            android:gravity="center"
+            android:text="相关书籍"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_publishfeelings_bookname"
+            android:layout_width="@dimen/x300"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:drawablePadding="@dimen/x20"
+            android:drawableRight="@drawable/title_jiantou_right_gray"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_64"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/y28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_publishfeelings_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:drawableLeft="@drawable/publishfeelings_who"
+            android:drawablePadding="@dimen/x20"
+            android:gravity="center"
+            android:text="谁可以看"
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_publishfeelings_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:drawablePadding="@dimen/x20"
+            android:drawableRight="@drawable/title_jiantou_right_gray"
+            android:gravity="center"
+            android:text="公开"
+            android:textColor="@color/text_64"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/y28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:text="同步到:"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y30" />
+
+        <ImageView
+            android:id="@+id/iv_publishfeelings_wb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView"
+            android:padding="@dimen/x28"
+            android:src="@drawable/setting_tb_wb_no" />
+
+        <ImageView
+            android:id="@+id/iv_publishfeelings_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_publishfeelings_wb"
+            android:padding="@dimen/x28"
+            android:src="@drawable/setting_tb_qq_no" />
+
+    </RelativeLayout>
+
+</LinearLayout>

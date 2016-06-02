@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#33000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#fff">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/media_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y100" />
+            <TextView
+                android:id="@+id/textView_popupwndow_music_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y100"
+                android:gravity="center"
+                android:text="顺序播放"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y34"
+                android:layout_marginLeft="@dimen/x20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/line2" />
+        <ListView
+            android:id="@+id/lv_popupwindow_show"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:divider="@color/line2"
+            android:dividerHeight="@dimen/y1"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_weight="1">
+        </ListView>
+        <TextView
+            android:id="@+id/textView_popupwndow_music_close"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/y34" />
+    </LinearLayout>
+
+</RelativeLayout>

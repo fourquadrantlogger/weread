@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/y60"
+                android:layout_height="@dimen/y60"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y60"
+                android:src="@drawable/privilege_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y40"
+                android:text="请好友登录\t“有书共读App”并"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y20"
+                android:text="点击\t[ 发现 ] — [ 扫一扫 ]"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/y26" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y40"
+                android:src="@drawable/privilege_part1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y30"
+                android:text="PS：别忘了帮好友先下载安装“有书共读App”哦"
+                android:textColor="@color/text_b2"
+                android:textSize="@dimen/y26" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/privilege_line" />
+
+
+            <ImageView
+                android:layout_width="@dimen/y60"
+                android:layout_height="@dimen/y60"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/privilege_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y40"
+                android:text="请好友扫描下图的二维码"
+                android:textColor="@color/text_32"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y20"
+                android:text="你就能获得查看所有往期领读包特权"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/y26" />
+
+            <ImageView
+                android:id="@+id/iv_privilege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y40"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y40"
+                android:paddingBottom="40dp"
+                android:text="PS：每人只有一次机会为他人解锁此特权"
+                android:textColor="@color/text_b2"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

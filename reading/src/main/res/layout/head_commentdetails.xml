@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_commentdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_commentdetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140">
+
+        <RelativeLayout
+            android:id="@+id/rl_commentdetails_avatar"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28">
+
+            <ImageView
+                android:id="@+id/iv_commentdetails_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/iv_commentdetails_sex"
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_commentdetails_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_commentdetails_name"
+            android:layout_below="@+id/tv_commentdetails_name"
+            android:layout_marginTop="2dp"
+            android:text="time"
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_commentdetails_time"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toEndOf="@+id/tv_commentdetails_time"
+            android:layout_toRightOf="@+id/tv_commentdetails_time"
+            android:text=""
+            android:textColor="@color/text_b2"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rl_commentdetails_avatar"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/rl_commentdetails_avatar"
+            android:text="name"
+            android:textColor="@color/green"
+            android:textSize="@dimen/y34" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commentdetails_bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:drawableLeft="@drawable/commentdetails_bookname"
+        android:drawablePadding="@dimen/x20"
+        android:text=""
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y24" />
+
+    <com.fengwo.reading.view.TextView_copypaste
+        android:id="@+id/tv_commentdetails_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10"
+        android:lineSpacingExtra="3dp"
+        android:text="content"
+        android:textColor="@color/text_32"
+        android:textSize="@dimen/y30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:layout_marginTop="@dimen/y25"
+        android:background="@color/bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ededed" />
+
+        <TextView
+            android:id="@+id/tv_commentdetails_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:drawableLeft="@drawable/homepage"
+            android:drawablePadding="@dimen/x10"
+            android:text="评论 "
+            android:textColor="@color/text_32"
+            android:textSize="@dimen/y30"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

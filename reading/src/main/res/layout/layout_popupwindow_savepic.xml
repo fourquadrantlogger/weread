@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popupwindow_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_popupwindow_savephoto"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@android:color/transparent"
+            android:text="保存到手机"
+            android:textColor="@color/text_32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/bg" />
+
+
+        <Button
+            android:id="@+id/btn_popupwindow_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:textColor="@color/text_32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_suggest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <EditText
+        android:id="@+id/et_suggest_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y400"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="请填写您的反馈建议:"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:paddingTop="@dimen/y20"
+        android:text=""
+        android:textColor="@color/text_32"
+        android:textColorHint="@color/text_a8"
+        android:textSize="@dimen/y30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y5"
+        android:background="@color/bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_suggest_tianjia"
+        android:layout_width="@dimen/x164"
+        android:layout_height="@dimen/y52"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/publishfeelings_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/publishfeelings_jia"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="添加图片"
+            android:textColor="@color/text_98"
+            android:textSize="@dimen/y24" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_suggest_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y5"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@color/bg" />
+
+    <EditText
+        android:id="@+id/et_suggest_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="请留下您的邮箱,有书会尽快提供反馈:"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:singleLine="true"
+        android:textColor="@color/text_32"
+        android:textColorHint="@color/text_a8"
+        android:textSize="@dimen/y30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/bg" />
+</LinearLayout>

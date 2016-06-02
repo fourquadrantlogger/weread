@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/y30">
+
+    <ImageView
+        android:id="@+id/iv_allqun_book"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/y184"
+        android:background="@color/white" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y184"
+        android:layout_marginLeft="@dimen/x30">
+
+        <TextView
+            android:id="@+id/tv_qun_weekrank_book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textSize="@dimen/y34"
+            android:textColor="@color/text_33" />
+
+        <TextView
+            android:id="@+id/tv_allqun_journal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="@dimen/y24"
+            android:textColor="@color/text_98"
+            android:layout_below="@+id/tv_qun_weekrank_book_title"
+            android:layout_marginTop="@dimen/y20" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="共读时间"
+                android:textSize="@dimen/y24"
+                android:textColor="@color/text_4c"
+                />
+
+            <TextView
+                android:id="@+id/tv_allqun_readtime"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:textSize="@dimen/y24"
+                android:textColor="@color/text_98"
+                android:layout_marginLeft="@dimen/x10" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/textView_link_jifen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y24"
+            android:text="积分规则"
+            android:textColor="#ff3d5d"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/y10"
+            android:gravity="right" />
+    </LinearLayout>
+</LinearLayout>

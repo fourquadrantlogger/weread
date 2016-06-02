@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_discover_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_discover_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <com.fengwo.reading.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_discover_jingxuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.fengwo.reading.view.MyListView
+                        android:id="@+id/lv_discover_jingxuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:background="@color/e5" />
+
+                    <TextView
+                        android:id="@+id/tv_discover_all_jingxuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y100"
+                        android:layout_gravity="center_horizontal"
+                        android:drawablePadding="@dimen/x12"
+                        android:drawableRight="@drawable/discover_right"
+                        android:gravity="center"
+                        android:paddingLeft="100dp"
+                        android:paddingRight="100dp"
+                        android:text="查看更多精选随笔"
+                        android:textColor="@color/green_17"
+                        android:textSize="@dimen/y30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_discover_daren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y50"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/y20"
+                        android:gravity="center"
+                        android:text="每周达人榜"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y30" />
+
+                    <com.fengwo.reading.view.MyListView
+                        android:id="@+id/lv_discover_daren"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:background="@color/e5" />
+
+                    <TextView
+                        android:id="@+id/tv_discover_all_daren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y100"
+                        android:layout_gravity="center_horizontal"
+                        android:drawablePadding="@dimen/x12"
+                        android:drawableRight="@drawable/discover_right"
+                        android:gravity="center"
+                        android:paddingLeft="100dp"
+                        android:paddingRight="100dp"
+                        android:text="查看更多达人"
+                        android:textColor="@color/green_17"
+                        android:textSize="@dimen/y30" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_discover_xinren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y20"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y90"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:gravity="center"
+                        android:text="优秀新人榜"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y30" />
+
+                    <TextView
+                        android:id="@+id/tv_discover_xinren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y90"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="@dimen/x12"
+                        android:drawableRight="@drawable/discover_update_qian"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="换一换"
+                        android:textColor="@color/green_17"
+                        android:textSize="@dimen/y28" />
+
+                    <com.fengwo.reading.view.MyGridView
+                        android:id="@+id/gv_discover_xinren"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView4"
+                        android:layout_marginTop="@dimen/y20"
+                        android:background="@color/white"
+                        android:cacheColorHint="#00000000"
+                        android:horizontalSpacing="@dimen/x20"
+                        android:listSelector="#00000000"
+                        android:numColumns="4"
+                        android:paddingBottom="@dimen/y40"
+                        android:paddingLeft="@dimen/x30"
+                        android:paddingRight="@dimen/x30"
+                        android:scrollbars="none"
+                        android:verticalSpacing="@dimen/x30" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y20"
+                        android:layout_below="@+id/gv_discover_xinren"
+                        android:background="@color/bg" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.fengwo.reading.view.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

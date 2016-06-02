@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_remen"
+        android:layout_width="@dimen/y150"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_search_remen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_search_remen_img"
+            android:layout_marginTop="@dimen/y18"
+            android:singleLine="true"
+            android:text="sssasd"
+            android:textColor="@color/text_64"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_search_remen_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_search_remen_title"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="@dimen/y8"
+            android:singleLine="true"
+            android:text="aaaasd"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/y26" />
+
+        <ImageView
+            android:id="@+id/iv_search_remen_img"
+            android:layout_width="@dimen/y150"
+            android:layout_height="@dimen/y190"
+            android:background="@color/e5"
+            android:padding="@dimen/y1"
+            android:scaleType="fitXY"
+            android:src="@drawable/zanwufengmian" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

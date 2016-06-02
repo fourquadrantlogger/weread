@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_group_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title_view" />
+
+    <TextView
+        android:id="@+id/tv_group_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="你还没有收藏内容哦 你还没有发布随笔哦"
+        android:textColor="@color/text_98"
+        android:textSize="@dimen/y30"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_group_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_group_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/e5" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_group_rm"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_group_rm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="热门"
+                        android:textColor="@color/green_17"
+                        android:textSize="@dimen/y32" />
+
+                    <View
+                        android:id="@+id/view_group_rm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y3"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/green_17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_group_zx"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/rl_group_rm">
+
+                    <TextView
+                        android:id="@+id/tv_group_zx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="最新"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/y32" />
+
+                    <View
+                        android:id="@+id/view_group_zx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y3"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/e5" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_group_book"
+                    android:layout_width="@dimen/x250"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/x28"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_98"
+                    android:textSize="@dimen/y26" />
+            </RelativeLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
